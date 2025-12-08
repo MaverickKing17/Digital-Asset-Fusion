@@ -16,11 +16,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           alt="Luxury Modern Home with Pool" 
           className="w-full h-full object-cover"
         />
-        {/* Adjusted Overlay for Better Clarity */}
-        {/* Reduced opacity from 85 to 40 to let image show through more clearly */}
-        <div className="absolute inset-0 bg-brand-navy/40 mix-blend-multiply"></div>
-        {/* Gradient ensures text on the left remains readable against the lighter background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/70 to-transparent"></div>
+        {/* Minimal overlay to preserve natural image sharpness and colors */}
+        <div className="absolute inset-0 bg-brand-navy/10"></div>
+        {/* Structural gradient for text legibility, fading out earlier to reveal more image */}
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/50 to-transparent"></div>
       </div>
 
       {/* Navigation */}

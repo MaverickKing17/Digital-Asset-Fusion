@@ -59,16 +59,16 @@ export const ValueCards: React.FC = () => {
             alt="Modern Digital Architecture Glass" 
             className="w-full h-full object-cover"
         />
-        {/* Adjusted Overlay: Reduced opacity to 60% for clarity while keeping text readable */}
-        <div className="absolute inset-0 bg-brand-navy/60"></div>
+        {/* Adjusted Overlay: Reduced opacity to 20% for maximum clarity */}
+        <div className="absolute inset-0 bg-brand-navy/20"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif text-white mb-4 drop-shadow-md">
+            <h2 className="text-3xl md:text-4xl font-serif text-white mb-4 drop-shadow-lg shadow-black/50">
                 Technical Requirements & Value Props
             </h2>
-            <p className="text-brand-gold uppercase tracking-widest text-sm font-semibold drop-shadow-sm">
+            <p className="text-brand-gold uppercase tracking-widest text-sm font-semibold drop-shadow-md shadow-black/50">
                 Web 3.0 Ready &bull; AI Optimized
             </p>
         </div>

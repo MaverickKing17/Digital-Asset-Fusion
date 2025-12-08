@@ -11,18 +11,18 @@ export const FinalForm: React.FC = () => {
           alt="Luxury Private Executive Lounge" 
           className="w-full h-full object-cover"
         />
-        {/* Adjusted Overlay: Reduced to 50% for high clarity and luxury feel */}
-        <div className="absolute inset-0 bg-brand-navy/50"></div>
-        {/* Gentle Gradient to ensure form stands out */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-navy/40"></div>
+        {/* Adjusted Overlay: Reduced to 20% for maximum clarity and luxury detail visibility */}
+        <div className="absolute inset-0 bg-brand-navy/20"></div>
+        {/* Very subtle gradient to ensure bottom doesn't wash out completely, but keeps image clear */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-navy/20"></div>
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 w-full">
         <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-serif text-white mb-6 drop-shadow-lg">
+            <h2 className="text-3xl md:text-5xl font-serif text-white mb-6 drop-shadow-xl shadow-black/50">
                 Secure This Asset Today
             </h2>
-            <p className="text-brand-gold text-lg font-light drop-shadow-md">
+            <p className="text-brand-gold text-lg font-light drop-shadow-lg shadow-black/50">
                 Initiate the acquisition process for ClassicHomesRemodeling.com
             </p>
         </div>
