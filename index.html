@@ -22,6 +22,15 @@
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
               serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+              'subtle-zoom': 'subtle-zoom 30s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              'subtle-zoom': {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.1)' },
+              }
             }
           }
         }
@@ -40,18 +49,5 @@
 </head>
   <body class="bg-white text-gray-900 font-sans antialiased">
     <div id="root"></div>
-    
-    <!-- Tawk.to Script -->
-    <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/69161393fd8dcd195946f907/1j9v3oujf';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-      })();
-    </script>
   </body>
 </html>
