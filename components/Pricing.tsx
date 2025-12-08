@@ -22,7 +22,7 @@ export const Pricing: React.FC = () => {
           <div className="w-24 h-1 bg-brand-gold mx-auto shadow-sm"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {/* Option 1: Outright Acquisition */}
             <div className="bg-brand-navy/40 backdrop-blur-md border border-white/10 p-8 flex flex-col relative group hover:border-brand-gold/50 transition-all duration-300 shadow-2xl">
                 <div className="absolute top-0 left-0 w-full h-1 bg-white/20 group-hover:bg-brand-gold transition-colors"></div>
@@ -127,12 +127,17 @@ export const Pricing: React.FC = () => {
             </div>
         </div>
 
-        <div className="mt-12 p-6 bg-brand-navy/60 backdrop-blur-sm border-l-4 border-brand-gold/50 text-xs text-gray-400 leading-relaxed max-w-4xl mx-auto rounded-r-sm">
-            <p>
-                "All purchase plans are subject to final contract and third-party escrow verification. 
-                Monthly installment payments assume a 0% interest rate on the remaining principal balance of $32,000. 
-                This is not a financing offer, and transfer of the domain is contingent upon final payment. 
-                Consult your financial and tax advisor for asset treatment and amortization schedules."
+        {/* Enhanced Financial Disclaimer */}
+        <div className="bg-white/95 backdrop-blur-sm p-8 border-l-4 border-brand-gold shadow-lg max-w-5xl mx-auto rounded-sm">
+            <p className="text-brand-navy text-xs leading-relaxed font-medium text-justify">
+                This transaction, including all Acquisition Options, is strictly governed by a formal 
+                Purchase Agreement and Escrow Instruction Prerequisite. All monthly installment 
+                stipulations assume a 0% interest rate on the remaining principal balance of $32,000. 
+                Transfer of the domain asset is a prerequisite contingent upon the full satisfaction of the 
+                final purchase price, verified via a mutually agreeable third-party escrow service. This 
+                communication does not constitute a financing offer or tax advice; Buyers are mandated 
+                to consult their corporate counsel and tax advisor regarding the domain's treatment as a 
+                Capital Asset for amortization schedules and financial reporting purposes.
             </p>
         </div>
       </div>
