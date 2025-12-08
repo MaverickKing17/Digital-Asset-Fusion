@@ -7,8 +7,8 @@ export const FinalForm: React.FC = () => {
       {/* Background Image - Serious Financial Transaction Aesthetic */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/1920/1080?grayscale&blur=1" 
-          alt="Executive Office" 
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2600&auto=format&fit=crop" 
+          alt="Executive Office Skyscraper" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-brand-navy/95"></div>

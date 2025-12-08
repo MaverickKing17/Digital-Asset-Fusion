@@ -12,8 +12,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero.webp" 
-          alt="Luxury Interior Architecture" 
+          src="https://images.unsplash.com/photo-1600596542815-e32c215962d1?q=80&w=2600&auto=format&fit=crop" 
+          alt="Luxury Modern Home with Pool" 
           className="w-full h-full object-cover"
         />
         {/* High Contrast Overlay for Maximum Readability */}
