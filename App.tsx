@@ -14,8 +14,20 @@ export default function App() {
   const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
+    // Check if script is already loaded to prevent duplicates (fixes t.$_Tawk.i18next error)
+    if (document.getElementById('tawk-widget-script')) {
+      return;
+    }
+
+    // Initialize Tawk global variables before script loads
+    // @ts-ignore
+    window.Tawk_API = window.Tawk_API || {};
+    // @ts-ignore
+    window.Tawk_LoadStart = new Date();
+
     // Safely load Tawk.to script
     const script = document.createElement("script");
+    script.id = 'tawk-widget-script'; // Unique ID for check above
     script.async = true;
     script.src = 'https://embed.tawk.to/69161393fd8dcd195946f907/1j9v3oujf';
     script.charset = 'UTF-8';
@@ -23,8 +35,8 @@ export default function App() {
     document.body.appendChild(script);
 
     return () => {
-      // Cleanup if necessary, though Tawk usually persists
-      // document.body.removeChild(script); 
+      // Tawk widget persists across re-renders, so we generally don't remove it 
+      // to avoid losing chat state during navigation.
     };
   }, []);
 
