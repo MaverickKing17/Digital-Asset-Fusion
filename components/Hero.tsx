@@ -12,13 +12,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1600596542815-e32c215962d1?q=80&w=2600&auto=format&fit=crop" 
+          src="https://i.ibb.co/mr4WGWz2/Interior-Exterior-Luxury-Homes.png" 
           alt="Luxury Modern Home with Pool" 
           className="w-full h-full object-cover"
         />
-        {/* High Contrast Overlay for Maximum Readability */}
-        <div className="absolute inset-0 bg-brand-navy/85 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/80 to-transparent"></div>
+        {/* Adjusted Overlay for Better Clarity */}
+        {/* Reduced opacity from 85 to 40 to let image show through more clearly */}
+        <div className="absolute inset-0 bg-brand-navy/40 mix-blend-multiply"></div>
+        {/* Gradient ensures text on the left remains readable against the lighter background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/70 to-transparent"></div>
       </div>
 
       {/* Navigation */}
