@@ -51,22 +51,24 @@ export const ValueCards: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50 relative">
-      {/* Background Image for Texture */}
-      <div className="absolute inset-0 z-0 opacity-5">
+    <section className="relative py-24">
+      {/* Background Image: 'Digital Asset' & 'Structure' */}
+      <div className="absolute inset-0 z-0">
         <img 
-            src="https://picsum.photos/1920/1080?grayscale" 
-            alt="Texture" 
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2600&auto=format&fit=crop" 
+            alt="Modern Digital Architecture Glass" 
             className="w-full h-full object-cover"
         />
+        {/* Adjusted Overlay: Reduced opacity to 60% for clarity while keeping text readable */}
+        <div className="absolute inset-0 bg-brand-navy/60"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif text-brand-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif text-white mb-4 drop-shadow-md">
                 Technical Requirements & Value Props
             </h2>
-            <p className="text-brand-gold uppercase tracking-widest text-sm font-semibold">
+            <p className="text-brand-gold uppercase tracking-widest text-sm font-semibold drop-shadow-sm">
                 Web 3.0 Ready &bull; AI Optimized
             </p>
         </div>

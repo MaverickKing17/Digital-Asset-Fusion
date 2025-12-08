@@ -4,22 +4,25 @@ import { Button } from './Button';
 export const FinalForm: React.FC = () => {
   return (
     <section className="relative py-24 min-h-[600px] flex items-center">
-      {/* Background Image - Serious Financial Transaction Aesthetic */}
+      {/* Background Image - Private Banking / High-End Interior Aesthetic */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2600&auto=format&fit=crop" 
-          alt="Executive Office Skyscraper" 
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2600&auto=format&fit=crop" 
+          alt="Luxury Private Executive Lounge" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand-navy/95"></div>
+        {/* Adjusted Overlay: Reduced to 50% for high clarity and luxury feel */}
+        <div className="absolute inset-0 bg-brand-navy/50"></div>
+        {/* Gentle Gradient to ensure form stands out */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-navy/40"></div>
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 w-full">
         <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">
+            <h2 className="text-3xl md:text-5xl font-serif text-white mb-6 drop-shadow-lg">
                 Secure This Asset Today
             </h2>
-            <p className="text-brand-gold text-lg font-light">
+            <p className="text-brand-gold text-lg font-light drop-shadow-md">
                 Initiate the acquisition process for ClassicHomesRemodeling.com
             </p>
         </div>
