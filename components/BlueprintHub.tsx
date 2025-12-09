@@ -25,7 +25,7 @@ export const BlueprintHub: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-navy relative overflow-hidden">
+    <section id="insights" className="py-24 bg-brand-navy relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
 

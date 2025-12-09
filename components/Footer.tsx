@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-brand-navy text-white pt-20 pb-12 border-t border-white/10 relative z-20">
+      <footer id="contact" className="bg-brand-navy text-white pt-20 pb-12 border-t border-white/10 relative z-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-20">
             

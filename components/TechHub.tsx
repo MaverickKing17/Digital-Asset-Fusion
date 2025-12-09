@@ -3,7 +3,7 @@ import { Cpu, Link, Glasses } from 'lucide-react';
 
 export const TechHub: React.FC = () => {
   return (
-    <section className="py-24 bg-brand-gray relative">
+    <section id="technology" className="py-24 bg-brand-gray relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif text-brand-navy mb-4">Strategic Value: Technology that De-Risks Procurement</h2>

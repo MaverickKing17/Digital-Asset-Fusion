@@ -8,16 +8,16 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Dynamic Background */}
+    <section id="marketplace" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+      {/* Dynamic Background - Platform/Architecture Aesthetic */}
       <div className="absolute inset-0 z-0 animate-subtle-zoom">
         <img 
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2600&auto=format&fit=crop" 
-          alt="Ultra Luxury Modern Architecture" 
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
+          alt="Luxury Architecture Platform Background" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-brand-navy/30 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/70 to-transparent"></div>
       </div>
 
       {/* Content */}

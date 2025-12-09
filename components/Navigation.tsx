@@ -19,20 +19,28 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenModal }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    setIsMobileMenuOpen(false);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-navy shadow-xl py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('marketplace')}>
           <Logo light={true} className="transform scale-90" />
         </div>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Marketplace</a>
-          <a href="#" className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Technology</a>
-          <a href="#" className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Insights</a>
-          <a href="#" className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Contact</a>
+          <button onClick={() => scrollToSection('marketplace')} className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Marketplace</button>
+          <button onClick={() => scrollToSection('technology')} className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Technology</button>
+          <button onClick={() => scrollToSection('insights')} className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Insights</button>
+          <button onClick={() => scrollToSection('contact')} className="text-white hover:text-brand-gold font-sans text-sm font-medium tracking-wide transition-colors">Contact</button>
           <Button variant="gold" onClick={onOpenModal} className="py-2 px-6 text-xs shadow-none hover:shadow-lg">
             Request Beta Access
           </Button>
@@ -50,10 +58,10 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenModal }) => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-brand-navy border-t border-white/10 shadow-2xl py-6 px-6 flex flex-col gap-6 animate-in slide-in-from-top-5">
-          <a href="#" className="text-white text-lg font-serif">Marketplace</a>
-          <a href="#" className="text-white text-lg font-serif">Technology</a>
-          <a href="#" className="text-white text-lg font-serif">Insights</a>
-          <a href="#" className="text-white text-lg font-serif">Contact</a>
+          <button onClick={() => scrollToSection('marketplace')} className="text-white text-lg font-serif text-left">Marketplace</button>
+          <button onClick={() => scrollToSection('technology')} className="text-white text-lg font-serif text-left">Technology</button>
+          <button onClick={() => scrollToSection('insights')} className="text-white text-lg font-serif text-left">Insights</button>
+          <button onClick={() => scrollToSection('contact')} className="text-white text-lg font-serif text-left">Contact</button>
           <Button variant="gold" onClick={() => { onOpenModal(); setIsMobileMenuOpen(false); }} fullWidth>
             Request Beta Access
           </Button>
