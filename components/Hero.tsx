@@ -12,12 +12,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
       {/* Dynamic Background - Platform/Architecture Aesthetic */}
       <div className="absolute inset-0 z-0 animate-subtle-zoom">
         <img 
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=90&w=2070&auto=format&fit=crop" 
           alt="Luxury Architecture Platform Background" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand-navy/30 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/70 to-transparent"></div>
+        {/* Removed mix-blend-multiply for sharpness. Added very subtle tint for cohesion. */}
+        <div className="absolute inset-0 bg-brand-navy/10"></div>
+        {/* Adjusted gradient: Stronger on left for text, completely clear on right for image clarity */}
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/50 to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -34,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
                 <h2 className="text-xl md:text-2xl text-white font-light tracking-wide mb-2">
                   Verified Provenance. Digital Certainty. <span className="text-brand-eco font-medium">Sustainable Integrity.</span>
                 </h2>
-                <p className="text-gray-300 font-light leading-relaxed max-w-2xl">
+                <p className="text-gray-100 font-light leading-relaxed max-w-2xl drop-shadow-md">
                   The enterprise B2B procurement platform fusing classical quality with AI matchmaking, Web3 tokenization, and 2026-ready immersive visualization.
                 </p>
             </div>
@@ -44,8 +46,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
                 Request Beta Access
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <div className="flex items-center text-white/80 font-sans text-sm">
-                <span className="block border-l border-white/20 pl-6 h-full flex items-center">
+              <div className="flex items-center text-white/90 font-sans text-sm drop-shadow-sm">
+                <span className="block border-l border-white/40 pl-6 h-full flex items-center font-medium">
                   Reduce Sourcing Time by 60%
                 </span>
               </div>
