@@ -27,14 +27,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         <div className="max-w-7xl mx-auto px-6 w-full">
           
           <div className="max-w-3xl space-y-8">
-            <h1 className="text-5xl md:text-7xl font-serif font-semibold text-white leading-[1.1] drop-shadow-lg opacity-0 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-[1.1] drop-shadow-lg opacity-0 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               The Classic Homes<br/>
               <span className="text-brand-gold italic">Marketplace</span>
             </h1>
 
             <div className="border-l-4 border-brand-gold pl-6 py-1 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                <h2 className="text-xl md:text-2xl text-white font-medium tracking-wide mb-3">
-                  Verified Provenance. Digital Certainty. <span className="text-brand-eco font-bold">Sustainable Integrity.</span>
+                <h2 className="text-xl md:text-2xl text-white font-semibold tracking-wide mb-3">
+                  Verified Provenance. Digital Certainty. <span className="text-white font-bold">Sustainable Integrity.</span>
                 </h2>
                 <p className="text-white font-medium text-lg leading-relaxed max-w-2xl drop-shadow-md">
                   The enterprise B2B procurement platform fusing classical quality with AI matchmaking, Web3 tokenization, and 2026-ready immersive visualization.
@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <div className="flex items-center text-white font-sans text-sm drop-shadow-sm">
-                <span className="block border-l-2 border-white/40 pl-6 h-full flex items-center font-semibold tracking-wide">
+                <span className="block border-l-2 border-white/40 pl-6 h-full flex items-center font-bold tracking-wide">
                   Reduce Sourcing Time by 60%
                 </span>
               </div>
@@ -60,8 +60,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
       {/* Tech Stack Badge Footer */}
       <div className="relative z-20 bg-brand-navy/90 backdrop-blur-md border-t border-white/10 py-6">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs md:text-sm text-gray-300 font-mono uppercase tracking-wider font-medium">
-            <span className="text-brand-gold font-bold">Powered by</span>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs md:text-sm text-gray-200 font-mono uppercase tracking-wider font-bold">
+            <span className="text-brand-gold font-extrabold">Powered by</span>
             <div className="flex gap-6 md:gap-12 flex-wrap justify-center">
               <div className="flex items-center gap-2">
                 <Cpu className="w-4 h-4 text-brand-gold" />

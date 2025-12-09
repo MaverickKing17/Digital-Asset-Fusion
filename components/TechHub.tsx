@@ -6,7 +6,7 @@ export const TechHub: React.FC = () => {
     <section id="technology" className="py-24 bg-brand-gray relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif text-brand-navy mb-4 font-semibold">Strategic Value: Technology that De-Risks Procurement</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4 font-bold">Strategic Value: Technology that De-Risks Procurement</h2>
           <div className="w-20 h-1 bg-brand-gold mx-auto"></div>
         </div>
 
@@ -16,8 +16,8 @@ export const TechHub: React.FC = () => {
             <div className="w-12 h-12 bg-brand-navy/5 rounded-lg flex items-center justify-center mb-6">
               <Cpu className="text-brand-navy w-6 h-6" />
             </div>
-            <h3 className="font-serif text-xl text-brand-navy mb-3 font-bold">AI Procurement Matchmaking</h3>
-            <p className="text-gray-700 text-sm leading-relaxed font-medium">
+            <h3 className="font-serif text-xl text-gray-900 mb-3 font-bold">AI Procurement Matchmaking</h3>
+            <p className="text-gray-900 text-sm leading-relaxed font-semibold">
               Ethically trained AI analyzes project blueprints and geo-data to instantly match architects with vetted materials and artisans, ensuring bias-free matching and aligning with 2026's agentic commerce trends.
             </p>
           </div>
@@ -30,8 +30,8 @@ export const TechHub: React.FC = () => {
             <div className="w-12 h-12 bg-brand-eco/10 rounded-lg flex items-center justify-center mb-6">
               <Link className="text-brand-eco w-6 h-6" />
             </div>
-            <h3 className="font-serif text-xl text-brand-navy mb-3 font-bold">Tokenized Material Provenance</h3>
-            <p className="text-gray-700 text-sm leading-relaxed font-medium">
+            <h3 className="font-serif text-xl text-gray-900 mb-3 font-bold">Tokenized Material Provenance</h3>
+            <p className="text-gray-900 text-sm leading-relaxed font-semibold">
               Blockchain ledger guarantees the source, authenticity, and legal provenance of high-end materials, enabling ESG compliance through traceable sustainable materials and supporting 2026's data collaborative initiatives.
             </p>
           </div>
@@ -41,8 +41,8 @@ export const TechHub: React.FC = () => {
             <div className="w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-6">
               <Glasses className="text-brand-gold w-6 h-6" />
             </div>
-            <h3 className="font-serif text-xl text-brand-navy mb-3 font-bold">AR/VR Client Visualizer</h3>
-            <p className="text-gray-700 text-sm leading-relaxed font-medium">
+            <h3 className="font-serif text-xl text-gray-900 mb-3 font-bold">AR/VR Client Visualizer</h3>
+            <p className="text-gray-900 text-sm leading-relaxed font-semibold">
               Beta-Ready Tool for real-time, client-facing simulation of material selections and remodels, enhanced for 2026's immersive retail experiences.
             </p>
             <div className="mt-4 inline-block px-2 py-1 bg-brand-gold/10 text-brand-gold text-xs font-bold rounded">

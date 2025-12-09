@@ -60,7 +60,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               <CheckCircle className="w-8 h-8 text-green-600" />
             </div>
             <h3 className="font-serif text-3xl text-brand-navy mb-4 font-bold">Request Received</h3>
-            <p className="text-gray-700 mb-8 max-w-xs font-medium">
+            <p className="text-gray-900 mb-8 max-w-xs font-semibold">
               Thank you for your interest in the Classic Homes Marketplace Beta Program. Our team will review your application and contact you shortly.
             </p>
             <Button onClick={onClose} variant="outline" className="font-bold">Close Window</Button>
@@ -70,7 +70,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             <div className="mb-8 text-center">
                 <span className="text-brand-gold uppercase tracking-widest text-xs font-extrabold">Priority Access</span>
                 <h3 className="font-serif text-3xl text-brand-navy mb-2 mt-2 font-bold">Request Beta Access</h3>
-                <p className="text-gray-700 text-sm font-medium">
+                <p className="text-gray-900 text-sm font-semibold">
                     Join the exclusive cohort of Tier-1 architects and builders piloting the 2026 platform.
                 </p>
             </div>
@@ -78,28 +78,28 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             <form className="space-y-5" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4">
                     <div>
-                        <label className="block text-xs uppercase tracking-wider font-bold text-brand-navy mb-2">First Name</label>
-                        <input name="firstName" type="text" className="w-full bg-gray-50 border border-gray-200 p-3 text-brand-navy focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-medium" required />
+                        <label className="block text-xs uppercase tracking-wider font-extrabold text-brand-navy mb-2">First Name</label>
+                        <input name="firstName" type="text" className="w-full bg-gray-50 border border-gray-200 p-3 text-gray-900 focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-bold" required />
                     </div>
                     <div>
-                        <label className="block text-xs uppercase tracking-wider font-bold text-brand-navy mb-2">Last Name</label>
-                        <input name="lastName" type="text" className="w-full bg-gray-50 border border-gray-200 p-3 text-brand-navy focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-medium" required />
+                        <label className="block text-xs uppercase tracking-wider font-extrabold text-brand-navy mb-2">Last Name</label>
+                        <input name="lastName" type="text" className="w-full bg-gray-50 border border-gray-200 p-3 text-gray-900 focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-bold" required />
                     </div>
                 </div>
 
                 <div>
-                    <label className="block text-xs uppercase tracking-wider font-bold text-brand-navy mb-2">Work Email</label>
-                    <input name="email" type="email" className="w-full bg-gray-50 border border-gray-200 p-3 text-brand-navy focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-medium" required />
+                    <label className="block text-xs uppercase tracking-wider font-extrabold text-brand-navy mb-2">Work Email</label>
+                    <input name="email" type="email" className="w-full bg-gray-50 border border-gray-200 p-3 text-gray-900 focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-bold" required />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                     <div>
-                        <label className="block text-xs uppercase tracking-wider font-bold text-brand-navy mb-2">Company Name</label>
-                        <input name="company" type="text" className="w-full bg-gray-50 border border-gray-200 p-3 text-brand-navy focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-medium" required />
+                        <label className="block text-xs uppercase tracking-wider font-extrabold text-brand-navy mb-2">Company Name</label>
+                        <input name="company" type="text" className="w-full bg-gray-50 border border-gray-200 p-3 text-gray-900 focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-bold" required />
                     </div>
                     <div>
-                         <label className="block text-xs uppercase tracking-wider font-bold text-brand-navy mb-2">Role</label>
-                         <select name="role" className="w-full bg-gray-50 border border-gray-200 p-3 text-brand-navy focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-medium">
+                         <label className="block text-xs uppercase tracking-wider font-extrabold text-brand-navy mb-2">Role</label>
+                         <select name="role" className="w-full bg-gray-50 border border-gray-200 p-3 text-gray-900 focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-bold">
                             <option value="Executive / C-Suite">Executive / C-Suite</option>
                             <option value="Procurement Officer">Procurement Officer</option>
                             <option value="Architect / Designer">Architect / Designer</option>
@@ -110,8 +110,8 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 </div>
 
                 <div>
-                    <label className="block text-xs uppercase tracking-wider font-bold text-brand-navy mb-2">Primary Interest</label>
-                    <select name="interest" className="w-full bg-gray-50 border border-gray-200 p-3 text-brand-navy focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-medium">
+                    <label className="block text-xs uppercase tracking-wider font-extrabold text-brand-navy mb-2">Primary Interest</label>
+                    <select name="interest" className="w-full bg-gray-50 border border-gray-200 p-3 text-gray-900 focus:outline-none focus:border-brand-gold transition-colors rounded-sm font-bold">
                         <option value="AI Procurement Matchmaking">AI Procurement Matchmaking</option>
                         <option value="Web3 Material Tokenization">Web3 Material Tokenization</option>
                         <option value="AR/VR Visualization Tools">AR/VR Visualization Tools</option>
@@ -120,13 +120,13 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 </div>
                 
                 {status === "error" && (
-                  <div className="flex items-center gap-2 text-red-600 text-xs bg-red-50 p-3 rounded-sm font-medium">
+                  <div className="flex items-center gap-2 text-red-600 text-xs bg-red-50 p-3 rounded-sm font-bold">
                     <AlertCircle size={16} />
                     <span>Something went wrong. Please try again later.</span>
                   </div>
                 )}
 
-                <Button fullWidth type="submit" disabled={status === "submitting"} className="mt-2 py-4 text-sm flex items-center justify-center gap-2 font-bold">
+                <Button fullWidth type="submit" disabled={status === "submitting"} className="mt-2 py-4 text-sm flex items-center justify-center gap-2 font-bold shadow-lg">
                     {status === "submitting" ? (
                       <>
                         <Loader2 className="w-4 h-4 animate-spin" />
@@ -137,7 +137,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                     )}
                 </Button>
                 
-                <p className="text-center text-[10px] text-gray-400 font-medium">
+                <p className="text-center text-[10px] text-gray-400 font-bold">
                     By submitting, you agree to our Terms and Privacy Policy. All data is processed in accordance with GDPR and CCPA standards.
                 </p>
             </form>
