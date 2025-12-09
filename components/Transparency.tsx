@@ -23,16 +23,16 @@ export const Transparency: React.FC = () => {
                     <div className="p-3 bg-brand-gold/10 rounded-full border border-brand-gold/20">
                         <ShieldCheck className="text-brand-gold w-8 h-8" />
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-serif text-brand-navy">
+                    <h2 className="text-2xl md:text-3xl font-serif text-brand-navy font-bold">
                         Full Transparency: Your Zero-Liability Asset
                     </h2>
                 </div>
                 
-                <h3 className="text-lg font-semibold text-brand-navy/90 mb-6 font-sans tracking-tight">
+                <h3 className="text-lg font-bold text-brand-navy mb-6 font-sans tracking-tight">
                     Immediate Trust: Validated Provenance & Sustainability Data.
                 </h3>
                 
-                <div className="prose prose-lg text-gray-600 font-light leading-relaxed mb-8">
+                <div className="prose prose-lg text-gray-700 font-medium leading-relaxed mb-8">
                     <p className="mb-4">
                         We prioritize absolute clarity in B2B transactions. Every asset on the Classic Homes Marketplace undergoes rigorous due diligence to ensure a seamless transfer of value.
                     </p>
@@ -41,11 +41,11 @@ export const Transparency: React.FC = () => {
                 <div className="space-y-4">
                     <div className="flex items-start gap-4 text-sm text-brand-navy bg-brand-gray/50 p-4 rounded-sm border border-gray-200">
                         <FileCheck className="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" />
-                        <span><strong>SEO Clean Slate:</strong> Includes a professionally assembled Google Disavow File to neutralize historical links.</span>
+                        <span className="font-medium"><strong>SEO Clean Slate:</strong> Includes a professionally assembled Google Disavow File to neutralize historical links.</span>
                     </div>
                     <div className="flex items-start gap-4 text-sm text-brand-navy bg-brand-eco/5 p-4 rounded-sm border border-brand-eco/20">
                         <Leaf className="w-5 h-5 text-brand-eco flex-shrink-0 mt-0.5" />
-                        <span><strong>Sustainability Assurance:</strong> All tokenized materials include embedded carbon footprint data, preparing for 2026's eco-focused regulations.</span>
+                        <span className="font-medium"><strong>Sustainability Assurance:</strong> All tokenized materials include embedded carbon footprint data, preparing for 2026's eco-focused regulations.</span>
                     </div>
                 </div>
             </div>

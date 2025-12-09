@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHW1XBYBMD"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -35,11 +35,16 @@
             },
             animation: {
               'subtle-zoom': 'subtle-zoom 30s ease-in-out infinite alternate',
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
             },
             keyframes: {
               'subtle-zoom': {
                 '0%': { transform: 'scale(1)' },
                 '100%': { transform: 'scale(1.1)' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
               }
             }
           }
@@ -105,7 +110,7 @@
 }
 </script>
 </head>
-  <body class="bg-white text-gray-900 font-sans antialiased">
+  <body class="bg-white text-gray-900 font-medium antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
